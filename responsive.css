@@ -1,0 +1,33 @@
+/* navbar responsive */
+@media (max-width: 992px) {
+    nav .navigation li:last-of-type a {
+        display: none;
+    }
+}
+@media (max-width: 1399px) {
+    nav div {
+        width: 1140px;
+    }
+}
+@media (max-width: 991px) {
+    nav div {
+        width: 720px;
+    }
+}
+@media (max-width: 1200px) {
+    nav .navigation li {
+            padding-inline: 10px;
+    }
+}
+@media (max-width: 767px) {
+    nav div {
+        width: 84%;
+    }
+    nav .navigation li {
+            display: none;
+    }
+    #menu-bar {
+        display: inline-block;
+    }
+}
+/* // navbar responsive */
