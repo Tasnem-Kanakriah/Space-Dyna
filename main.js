@@ -6,10 +6,15 @@ menuBar.addEventListener('click', function () {
 // // menu bar for nav bar
 
 // sticky navbar after 200px
+const navbar = document.getElementById('navbar')
 window.onscroll = function () {
     if (window.scrollY > 226) {
-        document.getElementById('navbar').style.position = 'sticky';
-        document.getElementById('navbar').style.top = 0;
+        document.querySelector('#navbar div').style.height = '80px';
+        navbar.style.position = 'fixed';
+        navbar.style.top = 0;
+        navbar.style.left = 0;
+        navbar.style.right = 0;
+        navbar.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.15)';
         // console.log('greater than 200px');
     }
     else {

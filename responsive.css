@@ -1,5 +1,5 @@
 @media (max-width: 1399px) {
-    nav div {
+    nav div, main .main-container {
         width: 1140px;
     }
     header .header-container {
@@ -12,10 +12,20 @@
     header img {
         width: 570px;
     }
+    main {
+        height: 619px;
+    }
+    main img.service_image {
+        height: 359px;
+        width: 311px;
+    }
+    main .services .service {
+        width: 380px;
+    }
 }
 
 @media (max-width: 1199px) {
-    nav div, header .header-container {
+    nav div, header .header-container, main .main-container {
         width: 960px;
     }
     header .header-container {
@@ -29,6 +39,20 @@
     }
     header img {
         width: 480px;
+    }
+    main {
+        height: 572px;
+        align-items: end;
+    }
+    main img.service_image {
+        height: 290px;
+        width: 250px;
+    }
+    main .services .service {
+        width: 295px;
+    }
+    main .services .service div p {
+        line-height: 20px;
     }
 }
 
@@ -50,6 +74,34 @@
         text-align: center;
         margin-right: 0;
     }
+    main {
+        background-image: none;
+        height: auto;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+    main .main-container img.service_image {
+        margin-right: 0;
+        padding: 0;
+        width: 340px;
+        height: 400px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        translate: -50%;
+    }
+    main .main-container .services {
+        justify-content: center;
+    }
+    main .main-container .services .service {
+        width: 40%;
+        border-radius: 20px;
+        margin: 0 12px 30px;
+        padding: 20px;
+        height: auto;
+        background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
+    }
 }
 
 @media (max-width: 991px) {
@@ -58,6 +110,7 @@
     }
     header .header-container {
         width: 690px;
+        padding-bottom: 0;
         flex-direction: column;
         align-items: center;
     }
@@ -100,6 +153,13 @@
     header img {
         width: 540px;
     }
+    main .main-container img.service_image {
+        top: 100%;
+    }
+    main .main-container .services .service {
+        width: 80%;
+        margin-inline: 0;
+    }
 }
 
 @media (max-width: 575px) {
@@ -110,7 +170,7 @@
 
 @media (max-width: 370px) {
     header .hero-section-text h1 {
-        font-size:      40px;
+        font-size: 40px;
     }
     header .search {
         position: relative;
@@ -120,11 +180,28 @@
         right: 10px;
         z-index: 1;
     }
+    main .main-container .services .service {
+        width: 94%;
+        padding: 10px;
+    }
+    main .main-container img.service_image {
+        width: 74%;
+        height: 50%;
+    }
+    main .main-container .services .service img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 340px) {
     header .search button {
         padding: 10px 10px;
         font-size: 12px;
+    }
+    main .main-container img.service_image {
+        width: 80%;
+        height: 38%;
     }
 }
