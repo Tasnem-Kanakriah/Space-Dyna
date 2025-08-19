@@ -16,7 +16,11 @@ nav {
     justify-content: center;
     background-color: #fafafa;
     /* background-color: #f7c7c8; */
-    z-index: 2000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
 }
 nav div {
     width: 1320px;
@@ -124,13 +128,16 @@ nav #menu-bar.open span:nth-child(3) {
 /* // nav bar */
 
 /* header */
+
 header .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: -100px;
+    margin-top: 100px;
     padding-block: 226px 120px;
+    /* z-index: -100; */
 }
 header::before, header::after {
     content: '';
@@ -277,3 +284,76 @@ main .services .service div p {
     line-height: 30px;
 }
 /* // Our Services */
+
+/* Our Statistics */
+section .statistics-content {
+    width: 1320px;
+    padding-top: 120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+section .statistics-content .statistics-container {
+    width: 660px;
+    padding: 0 12px;
+}
+section .statistics-content img {
+    width: 591px;
+    height: 414px;
+}
+section .statistics-content .statistics h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.25px;
+    margin-right: 100px;
+}
+section .statistics-content .statistics h3 span:first-of-type {
+    color: #03a4ed;
+}
+section .statistics-content .statistics h3 span:last-of-type {
+    color: #fe3f40;
+}
+section .statistics-content .statistics p {
+    margin: 30px 0 60px;
+    font-size: 15px;
+    line-height: 30px;
+}
+section .statistics-content .statistics .progress {
+    margin-bottom: 30px;
+}
+section .statistics-content .statistics .progress h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+section .statistics-content .statistics .progress .progress-bar-container {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f7eff1;
+}
+section .statistics-content .statistics .progress .progress-bar-container .progress-bar {
+    height: 100%;
+    border-radius: inherit;
+    background-color: #fe3f40;
+    position: relative;
+}
+section .statistics-content .statistics .progress:nth-of-type(1) .progress-bar-container .progress-bar {
+    width: 84%;
+}
+section .statistics-content .statistics .progress:nth-of-type(2) .progress-bar-container .progress-bar {
+    width: 88%;
+}
+section .statistics-content .statistics .progress:nth-of-type(3) .progress-bar-container .progress-bar {
+    width: 94%;
+}
+section .statistics-content .statistics .progress .progress-bar-container .progress-num {
+    color: #03a4ed;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: -34px;
+}
+/* // Our Statistics */

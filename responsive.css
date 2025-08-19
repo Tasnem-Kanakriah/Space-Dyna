@@ -1,15 +1,18 @@
 @media (max-width: 1399px) {
-    nav div, main .main-container {
+    nav div, 
+    main .main-container, 
+    header .header-container,
+    section .statistics-content {
         width: 1140px;
     }
     header .header-container {
-        width: 1140px;
         margin: 0 auto;
     }
     header .hero-section-text {
         width: 525px;
     }
-    header img {
+    header img, 
+    section .statistics-content .statistics-container {
         width: 570px;
     }
     main {
@@ -22,10 +25,17 @@
     main .services .service {
         width: 380px;
     }
+    section .statistics-content img {
+        width: 501px;
+        height: 350px;
+    }
 }
 
 @media (max-width: 1199px) {
-    nav div, header .header-container, main .main-container {
+    nav div, 
+    header .header-container, 
+    main .main-container,
+    section .statistics-content {
         width: 960px;
     }
     header .header-container {
@@ -37,7 +47,12 @@
     header .hero-section-text {
         width: 411px;
     }
-    header img {
+    section .statistics-content img {
+        width: 411px;
+        height: 287px;
+    }
+    header img,
+    section .statistics-content .statistics-container {
         width: 480px;
     }
     main {
@@ -102,13 +117,26 @@
         height: auto;
         background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
     }
+    section {
+        margin-top: 300px;
+    }
+    section .statistics-content img {
+        width: 100%;
+    }
+    section .statistics-content .statistics h3 {
+        margin-right: 0;
+    }
+    section .statistics-content .statistics h3 , section .statistics-content .statistics p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 991px) {
     nav div {
         width: 724px;
     }
-    header .header-container {
+    header .header-container,
+    section .statistics-content {
         width: 690px;
         padding-bottom: 0;
         flex-direction: column;
@@ -120,16 +148,27 @@
     header .hero-section-text, header .search {
         width: 100%;
     }
-    header img {
+    header img,
+    section .statistics-content .statistics-container {
         width: 720px;
     }
     nav .navigation li:not(:last-child) {
         padding-inline: 10px;
     }
+    section .statistics-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    section .statistics-content img {
+        width: 696px;
+        height: 488px;
+    }
 }
 
 @media (max-width: 767px) {
-    header .header-container {
+    header .header-container,
+    section .statistics-content {
         width: 84%;
     }
     nav .navigation li {
@@ -150,7 +189,8 @@
     header .search {
         width: 516px;
     }
-    header img {
+    header img,
+    section .statistics-content .statistics-container {
         width: 540px;
     }
     main .main-container img.service_image {
@@ -160,11 +200,28 @@
         width: 80%;
         margin-inline: 0;
     }
+    section .statistics-content img {
+        width: 516px;
+        height: 361px;
+    }
 }
 
 @media (max-width: 575px) {
-    header .header-container, header .hero-section-text, header .search, header img {
+    header .header-container, 
+    header .hero-section-text, 
+    header .search, 
+    header img {
         width: 97%;
+    }
+    section {
+        margin-top: 320px;
+    }
+    section .statistics-content .statistics-container {
+        width: 110%;
+    }
+    section .statistics-content img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -192,6 +249,9 @@
         width: 50px;
         height: 50px;
         margin-right: 10px;
+    }
+    section {
+        margin-top: 200px;
     }
 }
 
