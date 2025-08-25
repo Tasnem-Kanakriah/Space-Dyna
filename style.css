@@ -33,7 +33,6 @@ nav {
   z-index: 100;
 }
 nav div {
-  /* width: 1320px; */
   height: 100px;
   padding-inline: 12px;
   display: flex;
@@ -188,6 +187,7 @@ header .hero-section-text h1 {
   font-size: 50px;
   font-weight: 700;
   line-height: 72px;
+  letter-spacing: 1px;
 }
 header .hero-section-text h1 span:first-of-type {
   color: var(--secondary-color);
@@ -297,7 +297,6 @@ main .services .service div p {
 
 /* Our Statistics */
 section .statistics-content {
-  /* width: 1320px; */
   padding-top: 120px;
   margin: 0 auto;
   display: flex;
@@ -370,9 +369,7 @@ section .statistics-content .statistics .progress .progress-bar-container .progr
 
 /* Our Offers */
 section .offers-content {
-  /* width: 1320px; */
   margin: 0 auto;
-  /* padding-bottom: 200px; */
 }
 section .offers-content h3,
 section .trending-content h3 {
@@ -515,7 +512,6 @@ section .trending-content .trending-container .left-trending-content  {
   justify-content: space-between;
 }
 section .trending-content .trending-container .left-trending-content .img-container {
-  /* height: 559px; */
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -525,7 +521,6 @@ section .trending-content .trending-container .left-trending-content .img-contai
   width: 86%;
   border-radius: inherit;
   position: absolute;
-  /* top: 460px; */
   top: 80%;
   left: 0;
   background-color: var(--white-color);
@@ -571,5 +566,121 @@ section .trending-content .trending-container p {
   color: rgb(42, 42, 42);
   line-height: 30px;
 }
-
 /* // Trending News */
+
+/* Contact Us */
+#contact {
+  width: 100%;
+  height: 778px;
+  padding: 160px 0;
+  margin-top: 60px;
+  background-image: url("./images/contact-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+#contact img.person {
+  width: 178px;
+  height: 339px;
+  position: absolute;
+  right:-168px;
+  bottom: 0;
+}
+section .contact-container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;  
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  color: var(--white-color);
+  gap: 40px; /* 60 */
+}
+section .contact-container .send-us h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  line-height: 44px;
+}
+section .contact-container .send-us p {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+}section .contact-container .send-us h5 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+section .contact-container .send-us h5 span {
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  width: 46px;
+  height: 46px;
+  margin-inline: 30px 15px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+section .contact-container .send-us h5 span i {
+  color: var(--primary-color);
+  width: 17.3px;
+  height: 22px;
+}
+section .contact-container .send-us h5 a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+section .contact-container form {
+  justify-self: end;
+  width: 606px;
+  height: 100%;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  padding: 60px 30px;
+}
+section .contact-container form div {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "name surname"
+  "email email"
+  "textarea textarea";
+}
+section .contact-container form div input:nth-of-type(1) {
+  grid-area: name;
+}
+section .contact-container form div input:nth-of-type(2) {
+  grid-area: surname;
+}
+section .contact-container form div input:nth-of-type(3) {
+  grid-area: email;
+}
+section .contact-container form div textarea {
+  grid-area: textarea;
+}
+section .contact-container form div input, textarea {
+  width: 100%;
+  background-color: #d1f3ff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 33px;
+  outline: none;
+}
+section .contact-container form div input::placeholder, textarea::placeholder {
+  font-size: 15px;
+  color: #424242;
+  font-weight: 300;
+}
+section .contact-container form button {
+  margin-top: 24px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 12px 25px;
+  border-radius: 23px;
+  font-size: 15px;
+}
+/* // Contact Us */
