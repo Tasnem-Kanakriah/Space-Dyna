@@ -511,6 +511,9 @@ section .trending-content .trending-container .left-trending-content  {
   flex-direction: column;
   justify-content: space-between;
 }
+section .trending-content .trending-container .left-trending-content span {
+  margin-bottom: 10px;
+}
 section .trending-content .trending-container .left-trending-content .img-container {
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -660,6 +663,7 @@ section .contact-container form div input:nth-of-type(3) {
 }
 section .contact-container form div textarea {
   grid-area: textarea;
+  resize: none;
 }
 section .contact-container form div input, textarea {
   width: 100%;
@@ -684,3 +688,25 @@ section .contact-container form button {
   font-size: 15px;
 }
 /* // Contact Us */
+
+/* Footer */
+footer {
+  padding-block: 30px 45px;
+}
+footer .static-width {
+  margin: 0 auto;
+}
+footer .static-width h6 {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2a2a2a;
+  letter-spacing: 0.5px;
+}
+footer .static-width h6 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* // Footer */
