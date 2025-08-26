@@ -371,6 +371,7 @@ main .services .service div p {
 /* Our Statistics */
 section .statistics-content {
   padding-top: 120px;
+  overflow-x: hidden;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -710,6 +711,7 @@ section .trending-content .trending-container p {
   bottom: 0;
 }
 section .contact-container {
+  overflow-x: hidden;
   position: relative;
   height: 100%;
   margin: 0 auto;
