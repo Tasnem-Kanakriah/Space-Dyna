@@ -1,7 +1,9 @@
 // menu bar for nav bar
 const menuBar = document.getElementById('menu-bar');
+const navigationOnMobile = document.querySelector('nav .navigation-on-mobile');
 menuBar.addEventListener('click', function () {
-    this.classList.toggle('open')
+    this.classList.toggle('open');
+    navigationOnMobile.classList.toggle('is-visible')
 })
 // // menu bar for nav bar
 
@@ -12,10 +14,12 @@ window.onscroll = function () {
         document.querySelector('#navbar div').style.height = '80px';
         navbar.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.15)';
         // console.log('greater than 200px');
+        document.querySelector('nav .navigation-on-mobile').style.top = '80px';
     }
     else {
         document.querySelector('#navbar div').style.height = '100px';
         navbar.style.boxShadow = 'none';
+        document.querySelector('nav .navigation-on-mobile').style.top = '100px'
     }
 }
 // // sticky navbar after 200px

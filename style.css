@@ -14,6 +14,7 @@
 }
 html,
 body {
+  scroll-behavior: smooth;
   width: 100%;
   height: 100%;
 }
@@ -68,6 +69,7 @@ nav .navigation li:not(:last-child) {
 nav .navigation a {
   letter-spacing: 1px;
   font-size: 15px;
+  color: #2a2a2a;
   font-weight: 500;
 }
 nav .navigation li:first-of-type a {
@@ -246,16 +248,15 @@ header .search button {
 main {
   width: 100%;
   height: 709px;
-  padding: 140px 0;
   margin-top: 60px;
   background-image: url("./images/about-bg.png");
   background-position: center center;
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 main .main-container {
-  /* width: 1320px; */
   display: flex;
 }
 main img.service_image {
@@ -710,3 +711,23 @@ footer .static-width h6 a {
   color: var(--primary-color);
 }
 /* // Footer */
+
+/* Back To Top */
+.top {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: fixed;
+  text-align: center;
+  line-height: 50px;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #0000006e;
+}
+.top i {
+  color: var(--white-color);
+  font-size: 20px;
+}
+/* // Back To Top */

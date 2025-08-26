@@ -3,6 +3,7 @@
     display: none;
   }
 }
+
 @media (max-width: 1399px) {
   .static-width {
     width: 1140px;
@@ -63,6 +64,7 @@
       top: 0;
     }
   }
+
   section .contact-container form {
     width: 516px;
   }
@@ -97,7 +99,6 @@
 
   main {
     height: 572px;
-    align-items: end;
   }
 
   main img.service_image {
@@ -141,25 +142,20 @@
     }
   }
 
-  section
-    .trending-content
-    .trending-container
-    .right-trending-content
-    .trend-card {
+  section .trending-content .trending-container .right-trending-content .trend-card {
     margin-bottom: 20px;
   }
+
   section .contact-container form {
     width: 426px;
   }
-  /* section .contact-container form div input, textarea {
-    padding: 5px 20px;
-  } */
 }
 
 @media (max-width: 992px) {
   nav .navigation li:last-of-type a {
     display: none;
   }
+
 
   header::before {
     top: 77px;
@@ -209,11 +205,9 @@
     margin: 0 12px 30px;
     padding: 20px;
     height: auto;
-    background: linear-gradient(
-      105deg,
-      rgba(255, 77, 30, 1) 0%,
-      rgba(255, 44, 109, 1) 100%
-    );
+    background: linear-gradient(105deg,
+        rgba(255, 77, 30, 1) 0%,
+        rgba(255, 44, 109, 1) 100%);
   }
 
   section .statistics-content {
@@ -316,38 +310,31 @@
     margin-top: 140px;
   }
 
-  section
-    .trending-content
-    .trending-container
-    .right-trending-content
-    .trend-card {
+  section .trending-content .trending-container .right-trending-content .trend-card {
     margin-left: 0;
   }
-  section
-    .trending-content
-    .trending-container
-    .right-trending-content
-    .trend-card {
+
+  section .trending-content .trending-container .right-trending-content .trend-card {
     margin-bottom: 0;
   }
-  section
-    .trending-content
-    .trending-container
-    .left-trending-content
-    .img-container
-    .img-content-text {
+
+  section .trending-content .trending-container .left-trending-content .img-container .img-content-text {
     width: 100%;
   }
+
   #contact {
     height: auto;
   }
+
   section .contact-container {
     grid-template-columns: 1fr;
   }
+
   section .contact-container form {
     width: 100%;
     justify-self: center;
   }
+
   section .contact-container form div {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -363,6 +350,7 @@
 }
 
 @media (max-width: 767px) {
+
   nav div,
   header .header-container,
   section .statistics-content,
@@ -373,9 +361,33 @@
     width: 84%;
   }
 
-  nav .navigation li {
+  nav .navigation {
     display: none;
   }
+
+  nav .navigation-on-mobile {
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: #f7f7f7;
+    top: 100px;
+    left: 50%;
+    translate: -50%;
+  }
+  .is-visible {
+    display: flex !important;
+  }
+  nav .navigation-on-mobile li {
+    width: 100%;
+    line-height: 50px;
+    border-top: solid 1px rgb(231, 231, 231);
+    text-align: center;
+  }
+  nav .navigation-on-mobile li:first-of-type {
+    background-color: #eee;
+  }
+
   nav #menu-bar {
     display: inline-block;
   }
@@ -409,6 +421,7 @@
     width: 516px;
     height: 361px;
   }
+
   section .trending-content .trending-container .right-trending-content {
     margin-top: 160px;
   }
@@ -443,7 +456,9 @@
     }
   }
 }
+
 @media (max-width: 575px) {
+
   header .header-container,
   header .hero-section-text,
   header .search,
@@ -496,23 +511,17 @@
       top: 0;
     }
   }
-  section
-    .trending-content
-    .trending-container
-    .right-trending-content
-    .trend-card {
+
+  section .trending-content .trending-container .right-trending-content .trend-card {
     flex-direction: column;
     row-gap: 20px;
   }
-  section
-    .trending-content
-    .trending-container
-    .right-trending-content
-    .trend-card
-    img {
+
+  section .trending-content .trending-container .right-trending-content .trend-card img {
     width: 100%;
     height: 30%;
   }
+
   section .trending-content .trending-container .right-trending-content {
     margin-top: 240px;
   }
@@ -584,6 +593,7 @@
   section .statistics-content {
     margin-top: 200px;
   }
+
   section .trending-content .trending-container .right-trending-content {
     margin-top: 380px;
   }
