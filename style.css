@@ -371,6 +371,7 @@ main .services .service div p {
 /* Our Statistics */
 section .statistics-content {
   padding-top: 120px;
+  /* background-color: #03a4ed; */
   overflow-x: hidden;
   margin: 0 auto;
   display: flex;
@@ -378,7 +379,7 @@ section .statistics-content {
 }
 section .statistics-content .statistics-container {
   width: 660px;
-  padding: 0 12px;
+  padding: 0 24px;
 }
 section .statistics-content img {
   width: 591px;
@@ -738,6 +739,8 @@ section .contact-container .send-us h5 {
   margin-top: 50px;
   font-size: 20px;
   font-weight: 700;
+  line-height: 50px;
+  text-align: center;
 }
 section .contact-container .send-us h5 span {
   display: inline-block;
