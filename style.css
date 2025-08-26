@@ -22,9 +22,9 @@ body {
   width: 1320px;
 }
 /* ! */
-[data-aos] {
+/* [data-aos] {
   transform: translate3d(0,0,0); 
-}
+} */
 /* ! */
 .loading-page {
   background-color: var(--white-color);
