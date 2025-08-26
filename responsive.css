@@ -8,63 +8,51 @@
   .static-width {
     width: 1140px;
   }
-
   header .header-container {
     margin: 0 auto;
     top: 0;
   }
-
   header .hero-section-text {
     width: 525px;
   }
-
   header img,
   section .statistics-content .statistics-container {
     width: 570px;
   }
-
   main {
     height: 619px;
   }
-
   main img.service_image {
     height: 359px;
     width: 311px;
   }
-
   main .services .service {
     width: 380px;
   }
-
   section .statistics-content img {
     width: 501px;
     height: 350px;
   }
-
   @keyframes visibleCard {
     from {
       background-color: transparent;
       top: 0;
     }
-
     to {
       background-color: var(--primary-color);
       top: -220px;
     }
   }
-
   @keyframes hiddenCard {
     from {
       background-color: var(--primary-color);
       top: -220px;
     }
-
     to {
       background-color: transparent;
       top: 0;
     }
   }
-
   section .contact-container form {
     width: 516px;
   }
@@ -74,78 +62,62 @@
   .static-width {
     width: 960px;
   }
-
   header .header-container {
     align-items: flex-start;
   }
-
   nav .navigation li:not(:last-child) {
     padding-inline: 12px;
   }
-
   header .hero-section-text {
     width: 411px;
   }
-
   section .statistics-content img {
     width: 411px;
     height: 287px;
   }
-
   header img,
   section .statistics-content .statistics-container {
     width: 480px;
   }
-
   main {
     height: 572px;
   }
-
   main img.service_image {
     height: 290px;
     width: 250px;
   }
-
   main .services .service {
     width: 295px;
   }
-
   main .services .service div p {
     line-height: 20px;
   }
-
   section .offers-content .offer-cards {
     margin-top: 20px;
   }
-
   @keyframes visibleCard {
     from {
       background-color: transparent;
       top: 0;
     }
-
     to {
       background-color: var(--primary-color);
       top: -240px;
     }
   }
-
   @keyframes hiddenCard {
     from {
       background-color: var(--primary-color);
       top: -240px;
     }
-
     to {
       background-color: transparent;
       top: 0;
     }
   }
-
   section .trending-content .trending-container .right-trending-content .trend-card {
     margin-bottom: 20px;
   }
-
   section .contact-container form {
     width: 426px;
   }
@@ -155,26 +127,20 @@
   nav .navigation li:last-of-type a {
     display: none;
   }
-
-
   header::before {
     top: 77px;
   }
-
   header .search {
     width: 456px;
   }
-
   header .header-container {
     padding-top: 196px;
   }
-
   header .hero-section-text {
     width: 456px;
     text-align: center;
     margin-right: 0;
   }
-
   main {
     background-image: none;
     height: auto;
@@ -182,7 +148,6 @@
     padding: 0;
     margin: 0;
   }
-
   main .main-container img.service_image {
     margin-right: 0;
     padding: 0;
@@ -193,12 +158,10 @@
     left: 50%;
     translate: -50%;
   }
-
   main .main-container .services {
     margin-top: 100px;
     justify-content: center;
   }
-
   main .main-container .services .service {
     width: 40%;
     border-radius: 20px;
@@ -209,19 +172,15 @@
         rgba(255, 77, 30, 1) 0%,
         rgba(255, 44, 109, 1) 100%);
   }
-
   section .statistics-content {
     margin-top: 300px;
   }
-
   section .statistics-content img {
     width: 100%;
   }
-
   section .statistics-content .statistics h3 {
     margin-right: 0;
   }
-
   section .statistics-content .statistics h3,
   section .statistics-content .statistics p {
     text-align: center;
@@ -232,7 +191,6 @@
   nav div {
     width: 724px !important;
   }
-
   header .header-container,
   section .statistics-content,
   section .offers-content,
@@ -244,97 +202,77 @@
     flex-direction: column;
     align-items: center;
   }
-
   header .hero-section-text {
     margin-bottom: 45px;
   }
-
   header .hero-section-text,
   header .search {
     width: 100%;
   }
-
   header img,
   section .statistics-content .statistics-container {
     width: 720px;
   }
-
   nav .navigation li:not(:last-child) {
     padding-inline: 10px;
   }
-
   section .statistics-content {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-
   section .statistics-content img {
     width: 696px;
     height: 488px;
   }
-
   section .offers-content .offer-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
   @keyframes visibleCard {
     from {
       background-color: transparent;
       top: 0;
     }
-
     to {
       background-color: var(--primary-color);
       top: -190px;
     }
   }
-
   @keyframes hiddenCard {
     from {
       background-color: var(--primary-color);
       top: -190px;
     }
-
     to {
       background-color: transparent;
       top: 0;
     }
   }
-
   section .trending-content .trending-container {
     grid-template-columns: 1fr;
   }
-
   section .trending-content .trending-container .right-trending-content {
     margin-top: 140px;
   }
-
   section .trending-content .trending-container .right-trending-content .trend-card {
     margin-left: 0;
   }
-
   section .trending-content .trending-container .right-trending-content .trend-card {
     margin-bottom: 0;
   }
-
   section .trending-content .trending-container .left-trending-content .img-container .img-content-text {
     width: 100%;
   }
-
   #contact {
     height: auto;
   }
-
   section .contact-container {
     grid-template-columns: 1fr;
   }
-
   section .contact-container form {
     width: 100%;
     justify-self: center;
   }
-
   section .contact-container form div {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -343,14 +281,12 @@
       "email"
       "textarea";
   }
-
   section .contact-container .send-us {
     text-align: center;
   }
 }
 
 @media (max-width: 767px) {
-
   nav div,
   header .header-container,
   section .statistics-content,
@@ -360,11 +296,9 @@
   footer .static-width {
     width: 84%;
   }
-
   nav .navigation {
     display: none;
   }
-
   nav .navigation-on-mobile {
     width: 90%;
     display: none;
@@ -387,41 +321,33 @@
   nav .navigation-on-mobile li:first-of-type {
     background-color: #eee;
   }
-
   nav #menu-bar {
     display: inline-block;
   }
-
   header .hero-section-text {
     width: 516px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   header .search {
     width: 516px;
   }
-
   header img,
   section .statistics-content .statistics-container {
     width: 540px;
   }
-
   main .main-container img.service_image {
     top: 100%;
   }
-
   main .main-container .services .service {
     width: 80%;
     margin-inline: 0;
   }
-
   section .statistics-content img {
     width: 516px;
     height: 361px;
   }
-
   section .trending-content .trending-container .right-trending-content {
     margin-top: 160px;
   }
@@ -431,25 +357,21 @@
   section .offers-content .offer-cards .offer-card .hidden-card {
     padding: 10px;
   }
-
   @keyframes visibleCard {
     from {
       background-color: transparent;
       top: 0;
     }
-
     to {
       background-color: var(--primary-color);
       top: -154px;
     }
   }
-
   @keyframes hiddenCard {
     from {
       background-color: var(--primary-color);
       top: -154px;
     }
-
     to {
       background-color: transparent;
       top: 0;
@@ -458,70 +380,57 @@
 }
 
 @media (max-width: 575px) {
-
   header .header-container,
   header .hero-section-text,
   header .search,
   header img {
     width: 97%;
   }
-
   section .statistics-content {
     margin-top: 320px;
   }
-
   section .statistics-content .statistics-container {
     width: 110%;
   }
-
   section .statistics-content img {
     width: 100%;
     height: auto;
   }
-
   section .offers-content h3,
   section .trending-content h3 {
     width: auto;
   }
-
   section .offers-content .offer-cards {
     grid-template-columns: 1fr;
   }
-
   @keyframes visibleCard {
     from {
       background-color: transparent;
       top: 0;
     }
-
     to {
       background-color: var(--primary-color);
       top: -124px;
     }
   }
-
   @keyframes hiddenCard {
     from {
       background-color: var(--primary-color);
       top: -124px;
     }
-
     to {
       background-color: transparent;
       top: 0;
     }
   }
-
   section .trending-content .trending-container .right-trending-content .trend-card {
     flex-direction: column;
     row-gap: 20px;
   }
-
   section .trending-content .trending-container .right-trending-content .trend-card img {
     width: 100%;
     height: 30%;
   }
-
   section .trending-content .trending-container .right-trending-content {
     margin-top: 240px;
   }
@@ -533,19 +442,16 @@
       background-color: transparent;
       top: 0;
     }
-
     to {
       background-color: var(--primary-color);
       top: -140px;
     }
   }
-
   @keyframes hiddenCard {
     from {
       background-color: var(--primary-color);
       top: -140px;
     }
-
     to {
       background-color: transparent;
       top: 0;
@@ -563,37 +469,30 @@
   header .hero-section-text h1 {
     font-size: 40px;
   }
-
   header .search {
     position: relative;
   }
-
   header .search button {
     position: absolute;
     right: 10px;
     z-index: 1;
   }
-
   main .main-container .services .service {
     width: 94%;
     padding: 10px;
   }
-
   main .main-container img.service_image {
     width: 74%;
     height: 50%;
   }
-
   main .main-container .services .service img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
   }
-
   section .statistics-content {
     margin-top: 200px;
   }
-
   section .trending-content .trending-container .right-trending-content {
     margin-top: 380px;
   }

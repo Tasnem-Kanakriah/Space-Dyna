@@ -12,21 +12,21 @@
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
 }
-
 html,
 body {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
 }
-
 .static-width {
   width: 1320px;
 }
-
+/* ! */
+[data-aos] {
+  transform: translate3d(0,0,0); 
+}
+/* ! */
 .loading-page {
-  /* width: 100vw; */
-  /* height: 100vh; */
   background-color: var(--white-color);
   position: absolute;
   top: 0;
@@ -38,13 +38,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .loader {
   position: relative;
   width: 100px;
   height: 16px;
 }
-
 .loader:before,
 .loader:after {
   content: "";
@@ -58,7 +56,6 @@ body {
   top: 0;
   animation: ballMoveX 1s linear infinite;
 }
-
 .loader:after {
   box-shadow: none;
   transform: translateX(64px) scale(1);
@@ -66,39 +63,30 @@ body {
   animation: none;
   animation: trfLoader 1s linear infinite;
 }
-
 @keyframes trfLoader {
-
   0%,
   5% {
     transform: translateX(64px) scale(1);
   }
-
   10% {
     transform: translateX(64px) scale(1);
   }
-
   40% {
     transform: translateX(32px) scale(1.5);
   }
-
   90%,
   95% {
     transform: translateX(0px) scale(1);
   }
-
   100% {
     transform: translateX(0px) scale(1);
   }
 }
-
 @keyframes ballMoveX {
-
   0%,
   10% {
     transform: translateX(0);
   }
-
   90%,
   100% {
     transform: translateX(32px);
@@ -117,7 +105,6 @@ nav {
   top: 0;
   z-index: 100;
 }
-
 nav div {
   height: 100px;
   padding-inline: 12px;
@@ -125,51 +112,41 @@ nav div {
   justify-content: space-between;
   align-items: center;
 }
-
 nav a {
   text-decoration: none;
   color: black;
 }
-
 nav .navigation a:hover {
   color: var(--primary-color);
 }
-
 nav .logo {
   font-size: 24px;
   font-weight: 700;
 }
-
 nav .logo a {
   color: var(--primary-color);
   letter-spacing: 2px;
 }
-
 nav .logo span {
   color: var(--secondary-color);
 }
-
 nav .navigation {
   list-style-type: none;
   display: flex;
   align-items: center;
 }
-
 nav .navigation li:not(:last-child) {
   padding-inline: 20px;
 }
-
 nav .navigation a {
   letter-spacing: 1px;
   font-size: 15px;
   color: #2a2a2a;
   font-weight: 500;
 }
-
 nav .navigation li:first-of-type a {
   color: var(--primary-color);
 }
-
 nav .navigation li:last-of-type a {
   color: var(--white-color);
   border-radius: 20px;
@@ -178,11 +155,9 @@ nav .navigation li:last-of-type a {
   margin-left: 40px;
   background-color: var(--primary-color);
 }
-
 nav .navigation li:last-of-type a:hover {
   background-color: var(--secondary-color);
 }
-
 nav #menu-bar {
   display: none;
   width: 28px !important;
@@ -193,7 +168,6 @@ nav #menu-bar {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-
 nav #menu-bar span {
   display: block;
   position: absolute;
@@ -205,42 +179,35 @@ nav #menu-bar span {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-
 nav #menu-bar span:nth-child(1) {
   width: 70%;
   top: 0px;
   transform-origin: left center;
 }
-
 nav #menu-bar span:nth-child(2) {
   top: 50%;
   translate: 0 -50%;
   transform-origin: left center;
 }
-
 nav #menu-bar span:nth-child(3) {
   width: 70%;
   bottom: 0px;
   transform-origin: left center;
 }
-
 nav #menu-bar.open span:nth-child(1) {
   transform: rotate(45deg);
   top: -1px;
   width: 142%;
 }
-
 nav #menu-bar.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
-
 nav #menu-bar.open span:nth-child(3) {
   width: 142%;
   transform: rotate(-45deg);
   bottom: -1px;
 }
-
 /* // nav bar */
 
 /* header */
@@ -254,7 +221,6 @@ header .header-container {
   padding-block: 226px 120px;
   /* z-index: -100; */
 }
-
 header::before,
 header::after {
   content: "";
@@ -262,33 +228,28 @@ header::after {
   top: 100px;
   z-index: -1;
 }
-
 header::before {
   width: 193px;
   height: 467px;
   left: 0;
   background-image: url("./images/baner-dec-left.png");
 }
-
 header::after {
   width: 98px;
   height: 290px;
   right: 0;
   background-image: url("./images/baner-dec-right.png");
 }
-
 header .hero-section-text {
   box-sizing: content-box;
   width: 591px;
   padding-inline: 12px;
   margin-right: 45px;
 }
-
 header img {
   width: 660px;
   padding-inline: 12px;
 }
-
 header .hero-section-text h5 {
   font-size: 18px;
   font-weight: 500;
@@ -296,37 +257,30 @@ header .hero-section-text h5 {
   margin-bottom: 15px;
   line-height: 21.6px;
 }
-
 header .hero-section-text h1 {
   font-size: 50px;
   font-weight: 700;
   line-height: 72px;
   letter-spacing: 1px;
 }
-
 header .hero-section-text h1 span:first-of-type {
   color: var(--secondary-color);
 }
-
 header .hero-section-text h1 span:last-of-type {
   color: var(--primary-color);
 }
-
 header .hero-section-text p {
   line-height: 30px;
   margin-block: 20px 30px;
   font-size: 15px;
 }
-
 header .hero-section-text p span {
   color: var(--secondary-color);
 }
-
 header .hero-section-text p span:hover {
   color: #0a58ca;
   cursor: pointer;
 }
-
 header .search {
   display: flex;
   justify-content: space-between;
@@ -337,21 +291,18 @@ header .search {
   border-radius: 33px;
   background-color: var(--secondary-color);
 }
-
 header .search input {
   background-color: transparent;
   border: none;
   outline: none;
   caret-color: var(--white-color);
 }
-
 header .search input::placeholder {
   color: var(--white-color);
   padding-left: 5px;
   font-size: 15px;
   font-weight: 300;
 }
-
 header .search button {
   cursor: pointer;
   font-size: 15px;
@@ -363,7 +314,6 @@ header .search button {
   border: none;
   border-radius: 23px;
 }
-
 /* // header */
 
 /* Our Services */
@@ -378,53 +328,44 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 main .main-container {
   display: flex;
 }
-
 main img.service_image {
   height: 429px;
   width: 371px;
   padding: 0 12px;
   margin-right: 45px;
 }
-
 .services {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 }
-
 main .services .service {
   width: 416px;
   height: 126px;
   padding: 0 12px;
   display: flex;
 }
-
 main .services .service div {
   color: var(--white-color);
 }
-
 main .services .service img {
   width: 70px;
   height: 70px;
   margin-right: 24px;
 }
-
 main .services .service div h2 {
   font-size: 20px;
   margin-bottom: 12px;
   font-weight: 700;
 }
-
 main .services .service div p {
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
 }
-
 /* // Our Services */
 
 /* Our Statistics */
@@ -434,17 +375,14 @@ section .statistics-content {
   display: flex;
   align-items: center;
 }
-
 section .statistics-content .statistics-container {
   width: 660px;
   padding: 0 12px;
 }
-
 section .statistics-content img {
   width: 591px;
   height: 414px;
 }
-
 section .statistics-content .statistics h3 {
   font-size: 30px;
   font-weight: 700;
@@ -452,58 +390,72 @@ section .statistics-content .statistics h3 {
   letter-spacing: 0.25px;
   margin-right: 100px;
 }
-
 section .statistics-content .statistics h3 span:first-of-type {
   color: var(--secondary-color);
 }
-
 section .statistics-content .statistics h3 span:last-of-type {
   color: var(--primary-color);
 }
-
 section .statistics-content .statistics p {
   margin: 30px 0 60px;
   font-size: 15px;
   line-height: 30px;
 }
-
 section .statistics-content .statistics .progress {
   margin-bottom: 30px;
 }
-
 section .statistics-content .statistics .progress h4 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 14px;
 }
-
 section .statistics-content .statistics .progress .progress-bar-container {
   width: 100%;
   height: 6px;
   border-radius: 3px;
   background-color: #f7eff1;
 }
-
-section .statistics-content .statistics .progress .progress-bar-container .progress-bar {
+section
+  .statistics-content
+  .statistics
+  .progress
+  .progress-bar-container
+  .progress-bar {
   height: 100%;
   border-radius: inherit;
   background-color: var(--primary-color);
   position: relative;
 }
-
-section .statistics-content .statistics .progress:nth-of-type(1) .progress-bar-container .progress-bar {
+section
+  .statistics-content
+  .statistics
+  .progress:nth-of-type(1)
+  .progress-bar-container
+  .progress-bar {
   width: 84%;
 }
-
-section .statistics-content .statistics .progress:nth-of-type(2) .progress-bar-container .progress-bar {
+section
+  .statistics-content
+  .statistics
+  .progress:nth-of-type(2)
+  .progress-bar-container
+  .progress-bar {
   width: 88%;
 }
-
-section .statistics-content .statistics .progress:nth-of-type(3) .progress-bar-container .progress-bar {
+section
+  .statistics-content
+  .statistics
+  .progress:nth-of-type(3)
+  .progress-bar-container
+  .progress-bar {
   width: 94%;
 }
-
-section .statistics-content .statistics .progress .progress-bar-container .progress-num {
+section
+  .statistics-content
+  .statistics
+  .progress
+  .progress-bar-container
+  .progress-num {
   color: var(--secondary-color);
   font-size: 18px;
   font-weight: 600;
@@ -511,14 +463,12 @@ section .statistics-content .statistics .progress .progress-bar-container .progr
   right: 0;
   top: -34px;
 }
-
 /* // Our Statistics */
 
 /* Our Offers */
 section .offers-content {
   margin: 0 auto;
 }
-
 section .offers-content h3,
 section .trending-content h3 {
   padding: 120px 0;
@@ -529,23 +479,19 @@ section .trending-content h3 {
   text-align: center;
   line-height: 44px;
 }
-
 section .offers-content h3 span:first-of-type,
 section .trending-content h3 span:first-of-type {
   color: var(--secondary-color);
 }
-
 section .offers-content h3 span:last-of-type,
 section .trending-content h3 span:last-of-type {
   color: var(--primary-color);
 }
-
 section .offers-content .offer-cards {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(4, 1fr);
 }
-
 section .offers-content .offer-cards .offer-card {
   height: 213px;
   padding: 50px;
@@ -556,7 +502,6 @@ section .offers-content .offer-cards .offer-card {
   position: relative;
   z-index: 0;
 }
-
 section .offers-content .offer-cards .offer-card .visible-card {
   background-color: #fff;
   position: absolute;
@@ -567,15 +512,12 @@ section .offers-content .offer-cards .offer-card .visible-card {
   border-radius: inherit;
   z-index: 3;
 }
-
 section .offers-content .offer-cards .offer-card:hover {
   animation: moveCard 500ms linear forwards;
 }
-
 section .offers-content .offer-cards .offer-card:hover .hidden-card {
   animation: visibleCard 500ms linear forwards;
 }
-
 section .offers-content .offer-cards .offer-card .hidden-card {
   color: var(--white-color);
   position: absolute;
@@ -586,7 +528,6 @@ section .offers-content .offer-cards .offer-card .hidden-card {
   padding: 30px;
   animation: hiddenCard 500ms linear;
 }
-
 section .offers-content .offer-cards .offer-card .hidden-card::after {
   content: "";
   position: absolute;
@@ -597,59 +538,49 @@ section .offers-content .offer-cards .offer-card .hidden-card::after {
   border-right: 12px solid transparent;
   border-top: 15px solid transparent;
 }
-
 section .offers-content .offer-cards .offer-card:hover .hidden-card::after {
   border-top-color: var(--primary-color);
 }
-
 section .offers-content .offer-cards .offer-card .hidden-card h4 {
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 700;
 }
-
 section .offers-content .offer-cards .offer-card .hidden-card p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 1px;
 }
-
 section .offers-content .offer-cards .offer-card img {
   position: relative;
   z-index: 4;
 }
-
 @keyframes visibleCard {
   from {
     background-color: transparent;
     top: 0;
   }
-
   to {
     background-color: var(--primary-color);
     top: -196px;
   }
 }
-
 @keyframes hiddenCard {
   from {
     background-color: var(--primary-color);
     top: -196px;
   }
-
   to {
     background-color: transparent;
     top: 0;
   }
 }
-
 @keyframes moveCard {
   to {
     transform: translateY(100px);
   }
 }
-
 /* // Our Offers */
 
 /* Trending News */
@@ -657,13 +588,11 @@ section .trending-content {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-
 section .trending-content .trending-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-
 section .trending-content .trending-container span {
   display: inline-block;
   margin-right: 20px;
@@ -671,29 +600,33 @@ section .trending-content .trending-container span {
   font-weight: 300 !important;
   color: rgb(175, 175, 175);
 }
-
 section .trending-content .trending-container i {
   color: var(--primary-color);
   margin-right: 4px;
 }
-
 section .trending-content .trending-container .left-trending-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 section .trending-content .trending-container .left-trending-content span {
   margin-bottom: 10px;
 }
-
-section .trending-content .trending-container .left-trending-content .img-container {
+section
+  .trending-content
+  .trending-container
+  .left-trending-content
+  .img-container {
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
-
-section .trending-content .trending-container .left-trending-content .img-container .img-content-text {
+section
+  .trending-content
+  .trending-container
+  .left-trending-content
+  .img-container
+  .img-content-text {
   padding: 30px;
   width: 86%;
   border-radius: inherit;
@@ -703,12 +636,15 @@ section .trending-content .trending-container .left-trending-content .img-contai
   background-color: var(--white-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-section .trending-content .trending-container .left-trending-content .img-container img {
+section
+  .trending-content
+  .trending-container
+  .left-trending-content
+  .img-container
+  img {
   border-radius: inherit;
   width: 100%;
 }
-
 section .trending-content .trending-container .left-trending-content button {
   margin-top: 20px;
   padding: 12px 25px;
@@ -721,35 +657,39 @@ section .trending-content .trending-container .left-trending-content button {
   border: none;
   cursor: pointer;
 }
-
-section .trending-content .trending-container .right-trending-content .trend-card {
+section
+  .trending-content
+  .trending-container
+  .right-trending-content
+  .trend-card {
   margin-left: 30px;
   display: flex;
   align-items: center;
   column-gap: 45px;
 }
-
-section .trending-content .trending-container .right-trending-content .trend-card img {
+section
+  .trending-content
+  .trending-container
+  .right-trending-content
+  .trend-card
+  img {
   border-radius: 20px;
   width: 250px;
   height: 216px;
   margin-bottom: 30px;
 }
-
 section .trending-content .trending-container h4 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   margin-block: 20px 15px;
 }
-
 section .trending-content .trending-container p {
   font-size: 17px;
   font-weight: 300;
   color: rgb(42, 42, 42);
   line-height: 30px;
 }
-
 /* // Trending News */
 
 /* Contact Us */
@@ -762,7 +702,6 @@ section .trending-content .trending-container p {
   background-position: center center;
   background-size: cover;
 }
-
 #contact img.person {
   width: 178px;
   height: 339px;
@@ -770,7 +709,6 @@ section .trending-content .trending-container p {
   right: -168px;
   bottom: 0;
 }
-
 section .contact-container {
   position: relative;
   height: 100%;
@@ -782,27 +720,23 @@ section .contact-container {
   gap: 40px;
   /* 60 */
 }
-
 section .contact-container .send-us h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.25px;
   line-height: 44px;
 }
-
 section .contact-container .send-us p {
   margin-top: 30px;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.25px;
 }
-
 section .contact-container .send-us h5 {
   margin-top: 50px;
   font-size: 20px;
   font-weight: 700;
 }
-
 section .contact-container .send-us h5 span {
   display: inline-block;
   text-align: center;
@@ -813,20 +747,17 @@ section .contact-container .send-us h5 span {
   border-radius: 50%;
   background-color: var(--white-color);
 }
-
 section .contact-container .send-us h5 span i {
   color: var(--primary-color);
   width: 17.3px;
   height: 22px;
 }
-
 section .contact-container .send-us h5 a {
   text-decoration: none;
   color: var(--white-color);
   font-size: 16px;
   font-weight: 400;
 }
-
 section .contact-container form {
   justify-self: end;
   width: 606px;
@@ -835,7 +766,6 @@ section .contact-container form {
   border-radius: 20px;
   padding: 60px 30px;
 }
-
 section .contact-container form div {
   display: grid;
   gap: 24px;
@@ -845,24 +775,19 @@ section .contact-container form div {
     "email email"
     "textarea textarea";
 }
-
 section .contact-container form div input:nth-of-type(1) {
   grid-area: name;
 }
-
 section .contact-container form div input:nth-of-type(2) {
   grid-area: surname;
 }
-
 section .contact-container form div input:nth-of-type(3) {
   grid-area: email;
 }
-
 section .contact-container form div textarea {
   grid-area: textarea;
   resize: none;
 }
-
 section .contact-container form div input,
 textarea {
   width: 100%;
@@ -872,14 +797,12 @@ textarea {
   border-radius: 33px;
   outline: none;
 }
-
 section .contact-container form div input::placeholder,
 textarea::placeholder {
   font-size: 15px;
   color: #424242;
   font-weight: 300;
 }
-
 section .contact-container form button {
   margin-top: 24px;
   border: none;
@@ -889,18 +812,15 @@ section .contact-container form button {
   border-radius: 23px;
   font-size: 15px;
 }
-
 /* // Contact Us */
 
 /* Footer */
 footer {
   padding-block: 30px 45px;
 }
-
 footer .static-width {
   margin: 0 auto;
 }
-
 footer .static-width h6 {
   text-align: center;
   font-size: 15px;
@@ -910,12 +830,10 @@ footer .static-width h6 {
   color: #2a2a2a;
   letter-spacing: 0.5px;
 }
-
 footer .static-width h6 a {
   text-decoration: none;
   color: var(--primary-color);
 }
-
 /* // Footer */
 
 /* Back To Top */
@@ -932,10 +850,8 @@ footer .static-width h6 a {
   cursor: pointer;
   box-shadow: 0 0 15px #0000006e;
 }
-
 .top i {
   color: var(--white-color);
   font-size: 20px;
 }
-
 /* // Back To Top */
