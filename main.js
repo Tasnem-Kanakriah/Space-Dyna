@@ -15,11 +15,18 @@ window.onscroll = function () {
         navbar.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.15)';
         // console.log('greater than 200px');
         document.querySelector('nav .navigation-on-mobile').style.top = '80px';
-    }
-    else {
+    } else {
         document.querySelector('#navbar div').style.height = '100px';
         navbar.style.boxShadow = 'none';
         document.querySelector('nav .navigation-on-mobile').style.top = '100px'
     }
 }
 // // sticky navbar after 200px
+
+// AOS Animation
+AOS.init();
+// // AOS Animation
+
+setTimeout(function () {
+    document.querySelector('.loading-page').remove()
+}, 3000);
