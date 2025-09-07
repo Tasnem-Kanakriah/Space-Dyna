@@ -712,7 +712,6 @@ section .trending-content .trending-container p {
   bottom: 0;
 }
 section .contact-container {
-  overflow-x: hidden;
   position: relative;
   height: 100%;
   margin: 0 auto;
@@ -822,6 +821,7 @@ section .contact-container form button {
 /* Footer */
 footer {
   padding-block: 30px 45px;
+  /* overflow-x: hidden; */
 }
 footer .static-width {
   margin: 0 auto;
