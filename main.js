@@ -30,3 +30,54 @@ AOS.init();
 setTimeout(function () {
     document.querySelector('.loading-page').remove()
 }, 3000);
+
+// active link on scroll
+const sections = document.querySelectorAll('section, main, header');
+const links = document.querySelectorAll('.nav-link');
+
+// Highlight active link based on hash
+function setActiveLink(hash) {
+  links.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === hash) {
+      link.classList.add("active");
+    }
+  });
+}
+// Update active link on scroll
+function onScroll() {
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 80; // adjust for navbar
+    const sectionHeight = section.offsetHeight;
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      current = `#${section.id}`;
+    }
+  });
+
+  if (current && window.location.hash !== current) {
+    history.replaceState(null, "", current); // update URL without reload
+    setActiveLink(current);
+  }
+}
+// Click behavior
+links.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const hash = link.getAttribute("href");
+    document.querySelector(hash).scrollIntoView({ behavior: "smooth" });
+    history.pushState(null, "", hash);
+    setActiveLink(hash);
+  });
+});
+
+// Scroll listener
+window.addEventListener("scroll", onScroll);
+
+// Handle back/forward buttons
+window.addEventListener("popstate", () => {
+  setActiveLink(window.location.hash || "#home");
+});
+
+// Initial load
+setActiveLink(window.location.hash || "#home");
