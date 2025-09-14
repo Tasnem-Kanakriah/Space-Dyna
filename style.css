@@ -144,8 +144,11 @@ nav .navigation a {
   color: #2a2a2a;
   font-weight: 500;
 }
-nav .navigation li:first-of-type a {
+/* nav .navigation li:first-of-type a {
   color: var(--primary-color);
+} */
+.nav-link.active {
+  color: #ff6600;
 }
 nav .navigation li:last-of-type a {
   color: var(--white-color);
